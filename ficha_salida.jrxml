@@ -58,6 +58,9 @@
 	<field name="local_destino" class="java.lang.String"/>
 	<field name="adress_destino" class="java.lang.String"/>
 	<field name="dni_destino" class="java.lang.String"/>
+	<field name="details" class="java.util.Collection">
+		<fieldDescription><![CDATA[details]]></fieldDescription>
+	</field>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -172,8 +175,9 @@
 				<textFieldExpression><![CDATA[$F{fullName}]]></textFieldExpression>
 			</textField>
 			<subreport>
-				<reportElement x="0" y="140" width="749" height="81" uuid="f31308ea-1e23-4b37-b372-daeab740c320"/>
-				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("details")]]></dataSourceExpression>
+				<reportElement x="0" y="140" width="776" height="81" uuid="f31308ea-1e23-4b37-b372-daeab740c320"/>
+				<dataSourceExpression><![CDATA[$P{REPORT_DATA_SOURCE} instanceof net.sf.jasperreports.engine.data.JsonDataSource?((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("details"):
+new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]></dataSourceExpression>
 				<subreportExpression><![CDATA["./detail.jasper"]]></subreportExpression>
 			</subreport>
 			<staticText>

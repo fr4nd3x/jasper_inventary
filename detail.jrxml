@@ -62,7 +62,7 @@
 				<text><![CDATA[MARCA]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="3" width="110" height="20" uuid="e76bb6f8-0fea-4200-bbb0-c690f7d0411f">
+				<reportElement style="bordered" x="70" y="3" width="110" height="20" uuid="e76bb6f8-0fea-4200-bbb0-c690f7d0411f">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9bc512ca-63a0-4bbf-817b-4e12cf225c56"/>
 				</reportElement>
 				<box>
@@ -78,7 +78,7 @@
 				<text><![CDATA[CÓDIGO PATRIMONIAL]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="180" y="3" width="70" height="20" uuid="d7c5b369-3e24-4356-90da-7f043b43ec91">
+				<reportElement style="bordered" x="180" y="3" width="70" height="20" uuid="d7c5b369-3e24-4356-90da-7f043b43ec91">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="56f0d638-1730-4aa9-9f2a-7ca2808e67cd"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
@@ -95,7 +95,7 @@
 				<text><![CDATA[DENOMINACIÓN]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="310" y="3" width="50" height="20" uuid="1f273cca-838d-44e7-9321-7d3672763596">
+				<reportElement style="bordered" x="310" y="3" width="50" height="20" uuid="1f273cca-838d-44e7-9321-7d3672763596">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="22e534b7-7d57-4c6e-a7a4-088508943305"/>
 				</reportElement>
 				<box>
@@ -111,7 +111,7 @@
 				<text><![CDATA[MODELO]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="360" y="3" width="60" height="20" uuid="cd735450-8632-41f5-bc8d-c6a17bb90e5a">
+				<reportElement style="bordered" x="360" y="3" width="60" height="20" uuid="cd735450-8632-41f5-bc8d-c6a17bb90e5a">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="65da2153-cdc4-4563-ab0f-81b4f3d1bf19"/>
 				</reportElement>
 				<box>
@@ -127,7 +127,7 @@
 				<text><![CDATA[COLOR]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="420" y="3" width="80" height="20" uuid="389f6a90-9faa-4709-81c6-636880e8231a">
+				<reportElement style="bordered" x="420" y="3" width="80" height="20" uuid="389f6a90-9faa-4709-81c6-636880e8231a">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="340cbe3e-150a-4724-afca-dc8f34f36c78"/>
 				</reportElement>
 				<box>
@@ -143,7 +143,7 @@
 				<text><![CDATA[SERIE]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="500" y="3" width="80" height="20" uuid="e48fba5d-d708-46e8-be68-0d21263baabb">
+				<reportElement style="bordered" x="500" y="3" width="80" height="20" uuid="e48fba5d-d708-46e8-be68-0d21263baabb">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="313b334f-f2e4-4a5c-98b0-d892586ad853"/>
 				</reportElement>
 				<box>
@@ -159,7 +159,7 @@
 				<text><![CDATA[OTROS]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="580" y="3" width="70" height="20" uuid="e7c8e835-0792-4afc-b7e9-eb70ed33adcb">
+				<reportElement style="bordered" x="580" y="3" width="70" height="20" uuid="e7c8e835-0792-4afc-b7e9-eb70ed33adcb">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="85b828fe-645a-4eeb-befe-cd9c793ab5b2"/>
 				</reportElement>
 				<box>
@@ -175,7 +175,7 @@
 				<text><![CDATA[CONSERVACIÓN]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="650" y="3" width="92" height="20" uuid="13e012ff-9281-4746-8214-b4898e0c46b8">
+				<reportElement style="bordered" x="650" y="3" width="92" height="20" backcolor="#FFFFFF" uuid="13e012ff-9281-4746-8214-b4898e0c46b8">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d294c9ca-61bd-4256-9283-bf9e502fccdd"/>
 				</reportElement>
 				<box>

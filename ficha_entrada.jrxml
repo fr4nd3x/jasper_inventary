@@ -67,6 +67,13 @@
 				</textElement>
 				<text><![CDATA[FICHA DE ASIGNACION EN USO Y DEVOLUCIÓN DE BIENES MUEBLES PATRIMONIALES]]></text>
 			</staticText>
+			<staticText>
+				<reportElement x="0" y="24" width="79" height="20" uuid="27971bf3-76de-42c5-a221-cb945e3d3ce6"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOCUMENTO]]></text>
+			</staticText>
 		</band>
 	</title>
 	<pageHeader>

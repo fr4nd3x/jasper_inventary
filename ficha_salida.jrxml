@@ -67,7 +67,7 @@
 	<background>
 		<band height="81" splitType="Stretch">
 			<subreport>
-				<reportElement x="-14" y="0" width="776" height="81" uuid="f31308ea-1e23-4b37-b372-daeab740c320"/>
+				<reportElement x="-14" y="-20" width="776" height="81" uuid="f31308ea-1e23-4b37-b372-daeab740c320"/>
 				<dataSourceExpression><![CDATA[$P{REPORT_DATA_SOURCE} instanceof net.sf.jasperreports.engine.data.JsonDataSource?((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("details"):
 new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]></dataSourceExpression>
 				<subreportExpression><![CDATA["./detail.jasper"]]></subreportExpression>

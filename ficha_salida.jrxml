@@ -249,34 +249,6 @@
 				<text><![CDATA[CORREO ELECTRÓNICO]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="160" y="90" width="280" height="21" uuid="be2a599d-2709-47ad-8516-92445ba944a0">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6219bbcc-5be8-4444-8555-a0b2e885ce3a"/>
-				</reportElement>
-				<box>
-					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Left"/>
-				<textFieldExpression><![CDATA[$F{company}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement x="0" y="90" width="160" height="21" uuid="83db4e8d-7367-4c26-8285-10e7a0f43346">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6219bbcc-5be8-4444-8555-a0b2e885ce3a"/>
-				</reportElement>
-				<box>
-					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement>
-					<font isBold="true"/>
-				</textElement>
-				<text><![CDATA[ÓRGANO O UNIDAD ORGÁNICA]]></text>
-			</staticText>
-			<textField>
 				<reportElement x="160" y="111" width="280" height="19" uuid="78e2ecdb-afde-4631-abde-a7d785e0073a">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="721d5a97-9f9b-4c0e-bf6e-e15e3445ef74"/>
 				</reportElement>
@@ -544,6 +516,33 @@
 new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]></dataSourceExpression>
 				<subreportExpression><![CDATA["./detail.jasper"]]></subreportExpression>
 			</subreport>
+			<textField>
+				<reportElement x="160" y="90" width="280" height="21" uuid="d3bb3af0-5c37-48aa-98ef-9a8a919dcc38">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b6d59a83-3a87-4bdc-afa2-d96b44fcfb21"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{company}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="90" width="160" height="21" uuid="fb2dedbe-2c4b-47af-b5bf-784d7e88c4d3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b6d59a83-3a87-4bdc-afa2-d96b44fcfb21"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UNIDAD ORGANICA]]></text>
+			</staticText>
 		</band>
 	</detail>
 	<pageFooter>

@@ -272,7 +272,7 @@ new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]><
 				<textFieldExpression><![CDATA[$F{register_code}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="180" y="60" width="459" height="19" uuid="51e0d969-a7b2-43bc-8d9b-48ccb8ec58b6">
+				<reportElement x="180" y="60" width="460" height="19" uuid="51e0d969-a7b2-43bc-8d9b-48ccb8ec58b6">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="abea1832-c18d-4939-9d7d-abb6b9c58c8d"/>
 				</reportElement>
 				<box>

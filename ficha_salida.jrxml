@@ -261,7 +261,7 @@
 					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Left" markup="rtf"/>
-				<textFieldExpression><![CDATA[$F{local}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{local_destino}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="0" y="111" width="160" height="19" uuid="bf7f8537-e8e8-41a4-91b2-668c8dbb5c80">

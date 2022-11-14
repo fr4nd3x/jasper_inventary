@@ -65,7 +65,7 @@
 	<field name="adress" class="java.lang.String"/>
 	<field name="email_destino" class="java.lang.String"/>
 	<field name="register_code" class="java.lang.String"/>
-	<field name="company" class="java.lang.String"/>
+	<field name="ependence" class="java.lang.String"/>
 	<background>
 		<band height="28" splitType="Stretch"/>
 	</background>
@@ -519,14 +519,14 @@ new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]><
 				<subreportExpression><![CDATA["./detail.jasper"]]></subreportExpression>
 			</subreport>
 			<textField>
-				<reportElement x="160" y="90" width="280" height="21" uuid="bc2aec37-e833-46ac-8bd8-182d76c94f63">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="59fa30e7-5a65-48d6-ae00-8ccc55573724"/>
+				<reportElement x="160" y="90" width="280" height="20" uuid="344598b4-d2a3-4f91-b6dc-8311f3b9ce76">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="810270a4-af0f-4f01-b5e1-247b2095d4e7"/>
 				</reportElement>
-				<textFieldExpression><![CDATA[$F{company}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{ependence}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="0" y="90" width="160" height="21" uuid="121fcc58-e377-4763-9311-eb191eaf343c">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="59fa30e7-5a65-48d6-ae00-8ccc55573724"/>
+				<reportElement x="0" y="90" width="160" height="21" uuid="46f96ce2-4c12-4d95-9779-4e9e3c6c6521">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="810270a4-af0f-4f01-b5e1-247b2095d4e7"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>

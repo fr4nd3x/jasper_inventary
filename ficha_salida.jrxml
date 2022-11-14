@@ -63,7 +63,7 @@
 	<field name="email_destino" class="java.lang.String"/>
 	<field name="register_code" class="java.lang.String"/>
 	<field name="dependence" class="java.lang.String"/>
-	<field name="Field_1" class="java.lang.String"/>
+	<field name="company" class="java.lang.String"/>
 	<background>
 		<band height="28" splitType="Stretch"/>
 	</background>
@@ -514,6 +514,18 @@ new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]><
 					<font isBold="true"/>
 				</textElement>
 				<text><![CDATA[UNIDAD ORGANICA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="550" y="90" width="100" height="20" uuid="6e4bcb12-4ea6-44d9-a6c4-4e2b7ce9397a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3c8a3202-7b50-41e7-b471-50dbef073e62"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{company}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="440" y="90" width="100" height="20" uuid="94f0b39d-60e5-4480-9a10-817e9acc1e49">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3c8a3202-7b50-41e7-b471-50dbef073e62"/>
+				</reportElement>
+				<text><![CDATA[company]]></text>
 			</staticText>
 		</band>
 	</detail>

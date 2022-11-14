@@ -42,9 +42,6 @@
 	<queryString language="jsonql">
 		<![CDATA[details]]>
 	</queryString>
-	<field name="fullName" class="java.lang.String">
-		<fieldDescription><![CDATA[fullName]]></fieldDescription>
-	</field>
 	<field name="email" class="java.lang.String"/>
 	<field name="company" class="java.lang.String"/>
 	<field name="local" class="java.lang.String"/>
@@ -64,6 +61,7 @@
 	<field name="adress" class="java.lang.String"/>
 	<field name="email_destino" class="java.lang.String"/>
 	<field name="register_code" class="java.lang.String"/>
+	<field name="fullName" class="java.lang.String"/>
 	<background>
 		<band height="28" splitType="Stretch"/>
 	</background>
@@ -164,34 +162,6 @@
 	<detail>
 		<band height="230" splitType="Stretch">
 			<property name="com.jaspersoft.studio.layout"/>
-			<textField>
-				<reportElement x="160" y="50" width="180" height="20" uuid="bf0ad848-47cc-417a-b610-823976cb3211">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="476154e0-85fb-4077-aca9-ec01b1d1392b"/>
-				</reportElement>
-				<box>
-					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Left"/>
-				<textFieldExpression><![CDATA[$F{fullName}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement x="0" y="50" width="160" height="20" uuid="865441f2-0114-45ce-bce9-da4296a41a90">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="476154e0-85fb-4077-aca9-ec01b1d1392b"/>
-				</reportElement>
-				<box>
-					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement>
-					<font isBold="true"/>
-				</textElement>
-				<text><![CDATA[NOMBRES Y APELLIDOS]]></text>
-			</staticText>
 			<textField>
 				<reportElement x="360" y="50" width="80" height="20" uuid="69595f18-8d89-456b-8890-1e89ce007d05">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cb33dd90-8737-4391-8ecb-2865a38cc985"/>
@@ -305,7 +275,7 @@
 				<text><![CDATA[LOCAL O SEDE ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="30" width="144" height="20" uuid="01c4fc98-0f2a-4cc8-954f-2c29ab9d4a5c"/>
+				<reportElement x="0" y="30" width="160" height="20" uuid="01c4fc98-0f2a-4cc8-954f-2c29ab9d4a5c"/>
 				<textElement>
 					<font isBold="true"/>
 				</textElement>
@@ -544,6 +514,33 @@
 new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]></dataSourceExpression>
 				<subreportExpression><![CDATA["./detail.jasper"]]></subreportExpression>
 			</subreport>
+			<textField>
+				<reportElement x="160" y="50" width="180" height="20" uuid="fe0dfb2c-28f4-4f02-893a-6b0f0885694e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="57de7e55-7d48-4866-a4a5-c54b6d5f24b5"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{fullName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="50" width="160" height="20" uuid="552b8db4-6239-4f78-98a6-97da88349228">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="57de7e55-7d48-4866-a4a5-c54b6d5f24b5"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement markup="rtf">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOMBRES Y APELLIDOS]]></text>
+			</staticText>
 		</band>
 	</detail>
 	<pageFooter>

@@ -46,8 +46,12 @@
 		<fieldDescription><![CDATA[fullName]]></fieldDescription>
 	</field>
 	<field name="email" class="java.lang.String"/>
-	<field name="company" class="java.lang.String"/>
-	<field name="local" class="java.lang.String"/>
+	<field name="company" class="java.lang.String">
+		<fieldDescription><![CDATA[company]]></fieldDescription>
+	</field>
+	<field name="local" class="java.lang.String">
+		<fieldDescription><![CDATA[local]]></fieldDescription>
+	</field>
 	<field name="dni" class="java.lang.String"/>
 	<field name="date" class="java.lang.String"/>
 	<field name="type" class="java.lang.String"/>

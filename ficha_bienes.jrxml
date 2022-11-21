@@ -275,7 +275,7 @@
 				<text><![CDATA[RESPONSABLE]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="500" y="40" width="62" height="34" backcolor="#BFE1FF" uuid="be3cde4a-db7b-4547-a047-56f9b750a919">
+				<reportElement mode="Opaque" x="500" y="40" width="62" height="34" isRemoveLineWhenBlank="true" backcolor="#BFE1FF" uuid="be3cde4a-db7b-4547-a047-56f9b750a919">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d8d12f0a-13a8-449c-bc63-7ca691576a14"/>
 				</reportElement>
 				<box>
@@ -292,7 +292,7 @@
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="46" splitType="Stretch">
+		<band height="42" splitType="Stretch">
 			<property name="com.jaspersoft.studio.layout"/>
 			<textField>
 				<reportElement x="40" y="0" width="50" height="40" uuid="8ab98dd8-1e4f-4052-8d4c-bf7593051509"/>

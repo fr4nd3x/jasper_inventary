@@ -70,7 +70,7 @@
 		</band>
 	</title>
 	<pageHeader>
-		<band height="38" splitType="Stretch">
+		<band height="161" splitType="Stretch">
 			<staticText>
 				<reportElement x="0" y="10" width="119" height="20" uuid="01c4fc98-0f2a-4cc8-954f-2c29ab9d4a5c"/>
 				<textElement>
@@ -104,16 +104,8 @@
 				<textElement textAlignment="Right"/>
 				<text><![CDATA[FECHA:]]></text>
 			</staticText>
-		</band>
-	</pageHeader>
-	<columnHeader>
-		<band height="14" splitType="Stretch"/>
-	</columnHeader>
-	<detail>
-		<band height="218" splitType="Stretch">
-			<property name="com.jaspersoft.studio.layout"/>
 			<textField>
-				<reportElement x="180" y="-1" width="460" height="20" uuid="bf0ad848-47cc-417a-b610-823976cb3211">
+				<reportElement x="186" y="60" width="460" height="20" uuid="115414c4-76a9-4045-8a50-35824a54ed54">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="476154e0-85fb-4077-aca9-ec01b1d1392b"/>
 				</reportElement>
 				<box>
@@ -125,14 +117,8 @@
 				<textElement textAlignment="Left"/>
 				<textFieldExpression><![CDATA[$F{fullName}]]></textFieldExpression>
 			</textField>
-			<subreport>
-				<reportElement x="27" y="120" width="749" height="65" uuid="f31308ea-1e23-4b37-b372-daeab740c320"/>
-				<dataSourceExpression><![CDATA[$P{REPORT_DATA_SOURCE} instanceof net.sf.jasperreports.engine.data.JsonDataSource?((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("details"):
-new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]></dataSourceExpression>
-				<subreportExpression><![CDATA["./detail.jasper"]]></subreportExpression>
-			</subreport>
 			<staticText>
-				<reportElement x="0" y="-1" width="180" height="20" uuid="865441f2-0114-45ce-bce9-da4296a41a90">
+				<reportElement x="6" y="60" width="180" height="20" uuid="beb00ae1-fc79-4cfa-b0a6-02b41e99b88d">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="476154e0-85fb-4077-aca9-ec01b1d1392b"/>
 				</reportElement>
 				<box>
@@ -147,7 +133,7 @@ new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]><
 				<text><![CDATA[NOMBRES Y APELLIDOS]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="710" y="-1" width="80" height="20" uuid="69595f18-8d89-456b-8890-1e89ce007d05">
+				<reportElement x="716" y="60" width="80" height="20" uuid="35e8e40a-7d77-40d2-8468-1b1ebbd5e0a7">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cb33dd90-8737-4391-8ecb-2865a38cc985"/>
 				</reportElement>
 				<box>
@@ -160,7 +146,7 @@ new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]><
 				<textFieldExpression><![CDATA[$F{dni}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="640" y="-1" width="70" height="20" uuid="f22d59f6-d90f-4ddc-ad02-bf4f6d5effb6">
+				<reportElement x="646" y="60" width="70" height="20" uuid="e6dc7fe1-f34b-4fd2-8775-3ca3f9ff8544">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cb33dd90-8737-4391-8ecb-2865a38cc985"/>
 				</reportElement>
 				<box>
@@ -175,7 +161,7 @@ new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]><
 				<text><![CDATA[DNI]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="180" y="19" width="610" height="20" uuid="4753907c-f64d-46e5-ad39-7a847a528616">
+				<reportElement x="186" y="80" width="610" height="20" uuid="a492cc82-88be-4dc8-8112-3b5a02b24a19">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d993a654-f6de-4905-a816-fcf7489d92e2"/>
 				</reportElement>
 				<box>
@@ -188,7 +174,7 @@ new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]><
 				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="0" y="19" width="180" height="20" uuid="d1dfa2a1-c82c-4095-9390-8dcd3ea1ad31">
+				<reportElement x="6" y="80" width="180" height="20" uuid="e88fc823-0a15-453a-8c02-1e54d97e250a">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d993a654-f6de-4905-a816-fcf7489d92e2"/>
 				</reportElement>
 				<box>
@@ -203,7 +189,7 @@ new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]><
 				<text><![CDATA[CORREO ELECTRÓNICO]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="180" y="39" width="460" height="21" uuid="be2a599d-2709-47ad-8516-92445ba944a0">
+				<reportElement x="186" y="100" width="460" height="21" uuid="2f415256-6bed-4f56-a76e-db4e16364806">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6219bbcc-5be8-4444-8555-a0b2e885ce3a"/>
 				</reportElement>
 				<box>
@@ -216,7 +202,7 @@ new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]><
 				<textFieldExpression><![CDATA[$F{dependence}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="0" y="39" width="180" height="21" uuid="83db4e8d-7367-4c26-8285-10e7a0f43346">
+				<reportElement x="6" y="100" width="180" height="21" uuid="dd1c42cf-c39f-4a02-8675-996cbfa8decd">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6219bbcc-5be8-4444-8555-a0b2e885ce3a"/>
 				</reportElement>
 				<box>
@@ -231,7 +217,7 @@ new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]><
 				<text><![CDATA[ÓRGANO O UNIDAD ORGÁNICA]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="180" y="79" width="610" height="21" uuid="26f923ff-f603-421d-922f-070d71f6c663">
+				<reportElement x="186" y="140" width="610" height="21" uuid="ff9f83b5-e95e-484f-ae44-964763d26407">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4d28a9f1-80be-4f5d-a4c4-5da52277b69a"/>
 				</reportElement>
 				<box>
@@ -244,7 +230,7 @@ new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]><
 				<textFieldExpression><![CDATA[$F{adress}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="0" y="79" width="180" height="21" uuid="c40f8e9e-5901-4a05-8433-dfb74f3faac4">
+				<reportElement x="6" y="140" width="180" height="21" uuid="40b74d85-c41a-4402-bc99-a7c4fcd8900c">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4d28a9f1-80be-4f5d-a4c4-5da52277b69a"/>
 				</reportElement>
 				<box>
@@ -259,7 +245,7 @@ new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]><
 				<text><![CDATA[DIRECCIÓN]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="640" y="39" width="150" height="40" uuid="91a7f300-a8ae-4eb5-b5e3-88cd0964c73b">
+				<reportElement x="646" y="100" width="150" height="40" uuid="0545e811-7137-43cd-9b99-9d84dc1eda61">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e96b9d7e-bc21-4e79-a6b3-48332012e0fd"/>
 				</reportElement>
 				<box>
@@ -272,7 +258,7 @@ new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]><
 				<textFieldExpression><![CDATA[$F{register_code}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="180" y="60" width="460" height="19" uuid="51e0d969-a7b2-43bc-8d9b-48ccb8ec58b6">
+				<reportElement x="186" y="121" width="460" height="19" uuid="1fd32003-318d-4477-a82f-fb55aa998207">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="abea1832-c18d-4939-9d7d-abb6b9c58c8d"/>
 				</reportElement>
 				<box>
@@ -284,7 +270,7 @@ new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]><
 				<textFieldExpression><![CDATA[$F{local_destino}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="0" y="60" width="180" height="19" uuid="1424fdd5-83aa-41c1-a733-a71e4362bf7c">
+				<reportElement x="6" y="121" width="180" height="19" uuid="74135506-80d0-4ad6-ae31-1aacc97d1c29">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="abea1832-c18d-4939-9d7d-abb6b9c58c8d"/>
 				</reportElement>
 				<box>
@@ -298,6 +284,20 @@ new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]><
 				</textElement>
 				<text><![CDATA[LOCAL O SEDE]]></text>
 			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="14" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="92" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout"/>
+			<subreport>
+				<reportElement x="26" y="10" width="749" height="65" uuid="f31308ea-1e23-4b37-b372-daeab740c320"/>
+				<dataSourceExpression><![CDATA[$P{REPORT_DATA_SOURCE} instanceof net.sf.jasperreports.engine.data.JsonDataSource?((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("details"):
+new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["./detail.jasper"]]></subreportExpression>
+			</subreport>
 		</band>
 	</detail>
 	<pageFooter>

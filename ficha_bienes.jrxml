@@ -57,6 +57,7 @@
 	<field name="local" class="java.lang.String"/>
 	<field name=" dni_responsible" class="java.lang.String"/>
 	<field name="responsible_user_name" class="java.lang.String"/>
+	<field name="observations" class="java.lang.String"/>
 	<title>
 		<band height="53" splitType="Stretch">
 			<staticText>
@@ -149,7 +150,7 @@
 				<text><![CDATA[COLOR]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Style1" x="310" y="40" width="70" height="34" uuid="d797f98b-2945-4f68-9ed9-ef3b29f90684"/>
+				<reportElement style="Style1" x="310" y="40" width="60" height="34" uuid="d797f98b-2945-4f68-9ed9-ef3b29f90684"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -162,7 +163,7 @@
 				<text><![CDATA[DIMENSIONES]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Style1" x="380" y="40" width="50" height="34" uuid="905d9b20-0b58-4a5f-bdec-62377a420255"/>
+				<reportElement style="Style1" x="370" y="40" width="50" height="34" uuid="905d9b20-0b58-4a5f-bdec-62377a420255"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -175,7 +176,7 @@
 				<text><![CDATA[SERIE]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Style1" x="430" y="40" width="60" height="34" uuid="814c357a-ca98-41c7-9ba4-d7aadc07b8a7"/>
+				<reportElement style="Style1" x="420" y="40" width="40" height="34" uuid="814c357a-ca98-41c7-9ba4-d7aadc07b8a7"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -188,7 +189,7 @@
 				<text><![CDATA[OTROS]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Style1" x="490" y="40" width="72" height="34" uuid="7a146c82-b4a5-494e-acbf-cc18686459c8"/>
+				<reportElement style="Style1" x="460" y="40" width="40" height="34" uuid="7a146c82-b4a5-494e-acbf-cc18686459c8"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -273,10 +274,25 @@
 				</textElement>
 				<text><![CDATA[RESPONSABLE]]></text>
 			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="500" y="40" width="62" height="34" backcolor="#BFE1FF" uuid="be3cde4a-db7b-4547-a047-56f9b750a919">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d8d12f0a-13a8-449c-bc63-7ca691576a14"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[OBSERVACIONES]]></text>
+			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="41" splitType="Stretch">
+		<band height="46" splitType="Stretch">
 			<property name="com.jaspersoft.studio.layout"/>
 			<textField>
 				<reportElement x="40" y="0" width="50" height="40" uuid="8ab98dd8-1e4f-4052-8d4c-bf7593051509"/>
@@ -357,7 +373,7 @@
 				<textFieldExpression><![CDATA[$F{color}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="310" y="0" width="70" height="40" uuid="8a022824-242f-4630-b004-750ecd2eea43"/>
+				<reportElement x="310" y="0" width="60" height="40" uuid="8a022824-242f-4630-b004-750ecd2eea43"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -370,7 +386,7 @@
 				<textFieldExpression><![CDATA[$F{dimensions}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="380" y="0" width="50" height="40" uuid="9efacdc3-29a1-4162-aa10-e09a22d8be7f"/>
+				<reportElement x="370" y="0" width="50" height="40" uuid="9efacdc3-29a1-4162-aa10-e09a22d8be7f"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -383,7 +399,7 @@
 				<textFieldExpression><![CDATA[$F{series}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="430" y="0" width="60" height="40" uuid="6699c764-8e18-4873-a71d-0dbb6d67c802"/>
+				<reportElement x="420" y="0" width="40" height="40" uuid="6699c764-8e18-4873-a71d-0dbb6d67c802"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -396,7 +412,7 @@
 				<textFieldExpression><![CDATA[$F{others}]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement x="490" y="0" width="72" height="40" uuid="5fe97077-f6d4-4748-8ec1-3960aafeb9da"/>
+				<reportElement x="460" y="0" width="40" height="40" uuid="5fe97077-f6d4-4748-8ec1-3960aafeb9da"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -480,6 +496,21 @@
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{responsible_user_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="0" width="62" height="40" uuid="5a516a35-c89b-4c73-92d6-0dd6de64d7af">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d8d12f0a-13a8-449c-bc63-7ca691576a14"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{observations}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>

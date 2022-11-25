@@ -254,9 +254,6 @@
 					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
-				<textElement markup="">
-					<font size="8" isBold="true"/>
-				</textElement>
 				<text><![CDATA[RESPONSABLE           :]]></text>
 			</staticText>
 			<textField>

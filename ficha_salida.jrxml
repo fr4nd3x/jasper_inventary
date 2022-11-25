@@ -531,7 +531,7 @@
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="83" splitType="Stretch">
+		<band height="85" splitType="Stretch">
 			<property name="com.jaspersoft.studio.layout"/>
 			<subreport>
 				<reportElement x="7" y="10" width="776" height="69" uuid="84bf8bf2-544b-4d54-a7d6-bacd7c724b6f"/>
@@ -542,22 +542,22 @@ new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]><
 		</band>
 	</detail>
 	<pageFooter>
-		<band height="63" splitType="Stretch">
+		<band height="75" splitType="Stretch">
 			<staticText>
-				<reportElement x="83" y="40" width="130" height="20" uuid="46112bda-27a8-4934-87ba-85901c3682bf"/>
-				<text><![CDATA[ENTREGUE CONFORME]]></text>
+				<reportElement x="550" y="40" width="130" height="30" uuid="2f5613ac-0da9-4fc2-b61f-6529dd423439"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[-------------------------------------CONTROL PATRIMONIAL]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="336" y="40" width="130" height="20" uuid="2d6d6a83-f7b4-4e5e-9745-6a4674fc3365"/>
-				<text><![CDATA[RECIBÍ CONFORME]]></text>
+				<reportElement x="336" y="40" width="130" height="30" uuid="d8791af8-6359-4424-89c7-ce6a295546ad"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[-------------------------------------RECIBÍ CONFORME]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="550" y="40" width="130" height="20" uuid="2f5613ac-0da9-4fc2-b61f-6529dd423439"/>
-				<text><![CDATA[CONTROL PATRIMONIAL]]></text>
+				<reportElement x="100" y="40" width="130" height="30" uuid="4ae21599-dbad-4416-be09-25b7fb3b508f"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[-------------------------------------ENTREGUE CONFORME]]></text>
 			</staticText>
-			<line>
-				<reportElement x="554" y="20" width="126" height="20" uuid="42a60a2b-7ff6-4a3c-ad82-5ef04f86b4fb"/>
-			</line>
 		</band>
 	</pageFooter>
 	<summary>

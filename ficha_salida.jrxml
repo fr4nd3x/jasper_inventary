@@ -60,7 +60,6 @@
 		<fieldDescription><![CDATA[details]]></fieldDescription>
 	</field>
 	<field name="reference" class="java.lang.String"/>
-	<field name="email_destino" class="java.lang.String"/>
 	<field name="register_code" class="java.lang.String"/>
 	<field name="dependence" class="java.lang.String"/>
 	<field name="company" class="java.lang.String"/>

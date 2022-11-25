@@ -511,10 +511,10 @@
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="85" splitType="Stretch">
+		<band height="76" splitType="Stretch">
 			<property name="com.jaspersoft.studio.layout"/>
 			<subreport>
-				<reportElement x="7" y="10" width="776" height="69" uuid="84bf8bf2-544b-4d54-a7d6-bacd7c724b6f"/>
+				<reportElement x="7" y="0" width="776" height="69" uuid="84bf8bf2-544b-4d54-a7d6-bacd7c724b6f"/>
 				<dataSourceExpression><![CDATA[$P{REPORT_DATA_SOURCE} instanceof net.sf.jasperreports.engine.data.JsonDataSource?((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("details"):
 new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{details})]]></dataSourceExpression>
 				<subreportExpression><![CDATA["./detail.jasper"]]></subreportExpression>

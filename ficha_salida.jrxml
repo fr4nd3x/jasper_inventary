@@ -74,6 +74,12 @@
 		<band height="44" splitType="Stretch">
 			<staticText>
 				<reportElement style="Crosstab_CD" x="206" y="0" width="348" height="20" uuid="8365e84b-2e66-4135-93c6-a793d9e8491e"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
 				<textElement>
 					<font isBold="true"/>
 				</textElement>

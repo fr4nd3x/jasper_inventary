@@ -239,9 +239,6 @@
 					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
-				<textElement markup="none">
-					<font isBold="true"/>
-				</textElement>
 				<text><![CDATA[DIRECCIÓN]]></text>
 			</staticText>
 			<textField>

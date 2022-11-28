@@ -318,7 +318,7 @@
 				<textElement textAlignment="Center">
 					<font size="8" isBold="true"/>
 				</textElement>
-				<text><![CDATA[OTROS]]></text>
+				<text><![CDATA[MEDIDAS]]></text>
 			</staticText>
 			<staticText>
 				<reportElement style="bordered" x="630" y="-13" width="70" height="13" uuid="e7c8e835-0792-4afc-b7e9-eb70ed33adcb">
